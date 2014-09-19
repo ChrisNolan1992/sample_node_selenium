@@ -7,6 +7,7 @@ addons:
   firefox: 
     - "23.0"
     - "30.0"
+    - "29.0"
     
 services:
   - selenium
@@ -14,3 +15,4 @@ services:
 before_script:
   - "export DISPLAY=:99.0"
   - "/etc/init.d/xvfb start"
+  - firefox --version
